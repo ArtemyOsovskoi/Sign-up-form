@@ -5,83 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <section id="posterImageSection">
-        <input type="image" id="banner" src="images/marek-piwnicki-T0xIMW8JQeQ-unsplash.jpg">
-        <div id="logoBackground">
-            <p>EXPLORA</p>
-            <p>discover yourself</p>
-        </div>
+            <img src="https://images.unsplash.com/photo-1653594964387-a26001bc8921?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+            alt="image of a man standing in the mountains under a starry sky">                       
+            <div id="logo">
+                <p>EXPLORA</p> 
+            </div>
         <div class="footer">
             <ul>
                 <p>Copyright © <script>document.write(new Date().getFullYear())</script><a href="https://github.com/ArtemyOsovskoi">artemy.o</a>
                 <img class="githubicon" src="images/gitHubTransparent.png" width="32px" height="32px" alt="GitHub icon">
                 </p>
                 <p>Photo by <a href="https://unsplash.com/photos/T0xIMW8JQeQ">Marek Piwnicki</a> on Unsplash</p>
+                <p>This is not a real service, but a personal study project.</p>
             </ul>
         </div>
 </section>
 
 <section id="main">
     <div id="mainDiv">
-            <div class="divBox">
-                <p>Look over the horizon. It's only beginning. Explora</p>
+            <div class="topBox">
+                <p>Explora is an online travel search service.</p> 
+                <p>We select the most suitable trips for you based on the data provided.</p>
+                <br>
+                <p>Find your next adventure</p>
             </div>
             <div class="divBoxForm">
-                <form action="POST">
-                     <p>
-                        <label for="firstname">
-                        <span>First Name: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="text" id="firstname" name="username" placeholder="Jolene" required />
-                     </p>
+                <form action="POST" id="form">
+                    <h2>Sign Up</h2>
+                    <div class="row">
+                        <p>
+                            <label for="firstname">First Name:</label>
+                            <br>
+                            <!-- <strong><span aria-label="required">*</span></strong> -->
+                            <!-- </label> -->
+                            <input type="text" id="firstname" name="username" min="1" max="30" placeholder="Jolene" required />
+                        </p>
 
-                     <p>
-                        <label for="lasttname">
-                        <span>Last Name: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="text" id="lasttname" name="username" placeholder="Smith" required />
-                     </p>
+                        <p>
+                            <label for="lasttname">Last Name:</label>
+                            <!-- <span>Last Name: </span> -->
+                            <br>
+                            <!-- <strong><span aria-label="required">*</span></strong> -->
+                            <!-- </label> -->
+                            <input type="text" id="lasttname" name="username" min="1" max="30" placeholder="Smith" required />
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <label for="mail">Email: </label>
+                            <!-- <span>Email: </span> -->
+                            <br>
+                            <!-- <strong><span aria-label="required">*</span></strong> -->
+                            <!-- </label> -->
+                            <input type="email" id="mail" name="usermail" placeholder="joelenesmth@gmail.com" required />
+                        </p>
+                        <p>
+                            <label for="phone">Phone Number:</label>
+                            <!-- <span>Phone Number: </span> -->
+                            <br>
+                            <!-- <strong><span aria-label="required">*</span></strong> -->
+                            <!-- </label> -->
+                            <input type="number" id="phone" name="phonenumber" placeholder="120-4242-5151" required />
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <label for="pwd">Password:</label>
+                            <!-- <span>Password: </span> -->
+                            <br>
+                            <!-- <strong><span aria-label="required">*</span></strong> -->
+                            <!-- </label> -->
+                            <input type="password" id="pwd" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+                        </p>
+                        <p>
+                            <label for="pwd">Confirm Password</label>
+                            <!-- <span>Confirm Password: </span> -->
+                            <br>
+                            <!-- <strong><span aria-label="required">*</span></strong> -->
+                            <!-- </label> -->
+                            <input type="password" id="pwd" name="password" required />
+                        </p>
+                    </div>
 
-                    <p>
-                        <label for="mail">
-                        <span>Email: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="email" id="mail" name="usermail" placeholder="joelenesmth@gmail.com" required />
-                    </p>
-                    <p>
-                        <label for="phone">
-                        <span>Phone Number: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="number" id="phone" name="phonenumber" placeholder="120-4242-5151" required />
-                    </p>
-
-                    <p>
-                        <label for="pwd">
-                        <span>Password: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="password" id="pwd" name="password" required />
-                    </p>
-                    <p>
-                        <label for="pwd">
-                        <span>Confirm Password: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="password" id="pwd" name="password" required />
-                    </p>
                 </form>
             </div>
-            <div class="divBox">
-                <button>Sign up</button>
-                <p>Already have an account?</p> <a href="_">Sign up</a>
-            </div>
+                    <div class="bottomBox">
+                        <input type="submit" form="form" id="submitButton" value="Create account">
+                        <!-- <button type="submit" for>Sign up</button> -->
+                        <p>Already have an account? <a href="_">Log in</a></p> 
+                    </div>
     </div>
 </section>
 
