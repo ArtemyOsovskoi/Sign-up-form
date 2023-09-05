@@ -138,14 +138,9 @@ img {
 .footer a {
     margin-left: 2px;
 /*     text-decoration: none;
- */    color: lightgrey;
+ */    color: #cac1b2;
 } 
 
 .footer a:hover {
-    color: #F05454;
+    color: #6388a6;
 } 
-
-.githubicon {
-    background-color: transparent;
-    margin-left: 2px;
-}
