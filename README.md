@@ -1,6 +1,6 @@
 # Sign-up-form
 Sign-up form for a fictional service. 
-Live: WIP
+Live:https://artemyosovskoi.github.io/Sign-up-form
 
 ## Overview
 This project aims to show newly aquired HTML\CSS skills, as well as page styling and general understanding of UX UI principles. 
@@ -15,7 +15,7 @@ CSS
 
 ## Status
 Project started: 31.08.23
-Project finished: WIP
+Project finished: 05.09.23
 
 ## Conclusion
-WIP
+That was a good and quick project. I implemented new HTML and CSS knowledge and tryed making my first sign up form.
