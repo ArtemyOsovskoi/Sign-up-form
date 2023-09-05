@@ -88,7 +88,7 @@ img {
 }
 
 #formSection {
-    background-color: #f0f4f8;
+    background-color: #fdfeff;
     display: flex;
     flex: 5;
     flex-direction: column;
@@ -183,10 +183,6 @@ form h2 {
     border: 1px solid rgb(4, 155, 4);
     box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.1);
 }
-
-/* .formInputs input:invalid {
-    border: 1px solid red;
-} */
 
 #form label {
     color: black;
