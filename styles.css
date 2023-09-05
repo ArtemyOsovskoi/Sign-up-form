@@ -58,7 +58,7 @@ table {
 
 #bannerSection {
     background-image: url(images/man-standing-under-the-stars.jpg);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     flex: 3;
     display: flex;
@@ -73,10 +73,11 @@ table {
     justify-content: center;
     align-items: center;
     font-size: 5.5rem;
-    font-family: "Norse Bold";
-    margin-top: 20vh;
+    font-family: 'Alegreya Sans', sans-serif;
+/*     font-family: 'Eczar', serif;
+ */    margin-top: 20vh;
     padding: 16px 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #backgroundLogo img {
@@ -121,24 +122,21 @@ img {
 
 
 .footer {
+    font-family: 'Eczar', serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: baseline;
-    position: fixed;
-    bottom: 0;
+    gap: 2px;
     width: 16rem;
     height: 4rem;
     font-size: 0.9rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 0.6rem; 
+    margin-left: 0.6rem;
     color: lightgrey;
 }
 
-.footer ul p {
-    margin-bottom: 0.6rem;
-}
-
 .footer a {
-    margin-left: 10px;
+    margin-left: 2px;
 /*     text-decoration: none;
  */    color: lightgrey;
 } 
@@ -149,5 +147,5 @@ img {
 
 .githubicon {
     background-color: transparent;
-    margin-left: 10px;
+    margin-left: 2px;
 }
