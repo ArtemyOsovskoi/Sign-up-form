@@ -76,7 +76,7 @@ table {
     font-family: 'Alegreya Sans', sans-serif;
 /*     font-family: 'Eczar', serif;
  */    margin-top: 20vh;
-    padding: 16px 0;
+    padding: 14px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -91,12 +91,18 @@ img {
 }
 
 #formSection {
-    background-color: #f4f7f7;
+    background-color: #f9fcfc;
     display: flex;
     flex: 5;
     flex-direction: column;
     justify-content: center;
     font-size: 2rem;
+}
+
+.message, .credo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 70%;
 }
 
 .message {
@@ -109,7 +115,7 @@ img {
 }
 
 form h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
@@ -120,69 +126,76 @@ form h2 {
     padding-bottom: 2rem;
     background-color: white;
     flex-direction: row;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
 
 .row {
     display: flex;
-    gap: 10px;
+    gap: 80px;
+    margin-bottom: 1rem;
+}
+/* .submitButton:hover {
+    color: #f86829;
+} */
+
+.question {
+    padding-left: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.question a {
+    color: #27527c;
+    text-decoration: none;
+}
+
+.question a:hover {
+    color: #f86829;
+}
+
+.formInputs input {
+    border-radius: 6px;
+    padding-top: 0.5rem;
+    padding-right: 4rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid #cac1b2;
 }
 
 .submitButton {
     margin-top: 2rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
-    padding: 1.2rem 3rem 1.2rem 3rem;
-    border-radius: 4px;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 10px;
+    border:none;
     cursor: pointer;
     font-size: 1.2rem;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: #27527c;
 }
 
-.question {
-    padding-left: 2rem;
-    font-size: 1rem;
-    font-weight: 600;
+.submitButton:hover {
+    background-color: #153b66;
 }
 
-.formInputs input {
-    border-radius: 6px;
-    padding-top: 0.5rem;
-    padding-right: 2.5rem;
-    padding-bottom: 0.5rem;
+.submitButton:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-#form input:valid {
+/* #form input:valid {
     border: 2px solid green;
-}
+} */
 
-#form input:invalid {
+/* #form input:invalid {
     border: 2px solid red;
-}
+} */
 
 #form label {
-    color: rgb(36, 36, 36);
-    font-weight: 100;
+    color: black;
+    letter-spacing: 0.1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
     font-family: 'Eczar', serif;
@@ -199,8 +212,8 @@ form h2 {
 
 .footer a {
     margin-left: 2px;
-/*     text-decoration: none;
- */    color: #cac1b2;
+    text-decoration: none;
+    color: #cac1b2;
 } 
 
 .footer a:hover {
